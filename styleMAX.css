@@ -1,0 +1,27 @@
+html{
+  margin:0;
+  padding:0;
+  background-color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  justify-content:center;
+  font-family:avenir;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 2px
+
+}
+
+.12-header{
+  font-family:cursive;
+}
+.container-fluid{
+  color:#69CED9;
+}
+.contact{
+  background-color: black;
+}
