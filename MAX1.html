@@ -224,14 +224,17 @@ background-size:1800px 1300px;
       font-size: 150px;
     }
   }
-  .col-sm-8 .btn{
+  .aboutbtn .btn{
     background-color: #006AE8;
     color: #fff;
     border: none;
+    border-radius: 20px;
   }
-  .col-sm-8 .btn:hover{
-  opacity: 0.8;
-    border: none;
+  .aboutbtn .btn:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
   }
   .center {
   display: block;
@@ -265,9 +268,10 @@ background-size:1800px 1300px;
   border: none;
 }
 .col-sm-12 .btn:hover{
-  background-color: #00B5E8;
-  color: white;
-  border: none;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
 }
 .col-sm-8 p {
   text-align: justify;
@@ -369,6 +373,10 @@ background-size:1800px 1300px;
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
+
+.justify{
+  text-align: justify;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -403,10 +411,12 @@ background-size:1800px 1300px;
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-7 aboutbtn">
       <h2>About</h2>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4 class="justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <br><button class="btn btn-default btn-lg waves-effect">Get Started</button>
     </div>
     <div class="col-sm-4">
@@ -420,10 +430,10 @@ background-size:1800px 1300px;
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo center"></span>
     </div>
-    <div class="col-sm-8 whity font-space">
+    <div class="col-sm-7 whity font-space">
       <h1>Our Values</h1>
-      <p><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <p class="justify"><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+      <p class="justify"><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
@@ -474,6 +484,8 @@ background-size:1800px 1300px;
 <div id="portfolio" class="container-fluid text-center bg-black">
   <h2 class=whity>We Deliver</h2><br>
   <div class="row text-center">
+    <div class="col-sm-2">
+    </div>
         <div class="col-sm-4">
           <div class="hovereffect">
           <img src="paris.jpg" alt="Paris" width="800" height="250">
@@ -492,6 +504,13 @@ background-size:1800px 1300px;
         </div>
         </div>
       </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <br>
+      <div class="row text-center">
+        <div class="col-sm-2">
+        </div>
         <div class="col-sm-4">
           <div class="hovereffect">
           <img src="sanfran.jpg" alt="San Francisco" width="800" height="250">
@@ -501,6 +520,15 @@ background-size:1800px 1300px;
         </div>
         </div>
       </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+        <img src="sanfran.jpg" alt="San Francisco" width="800" height="250">
+        <div class="overlay">
+          <h2>Versoph</h2>
+          <a class="info" href="#">link here</a>
+      </div>
+      </div>
+    </div>
   </div><br>
 
 <div id="testimonials">
